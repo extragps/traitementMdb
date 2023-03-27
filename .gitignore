@@ -1,0 +1,7 @@
+**/CVS
+**/.cvsignore
+*~
+bin
+traitementMdb.jar
+.gui.lanceur.*
+.loggerDetecteur
