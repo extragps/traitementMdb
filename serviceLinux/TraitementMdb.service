@@ -1,0 +1,12 @@
+[Unit]
+Description = Java Service
+After =  network.target
+
+[Service]
+Type = forking
+ExecStart = /usr/local/bin/TraitementMdb.sh start
+ExecStop = /usr/local/bin/TraitementMdb.sh stop
+ExecReload = /usr/local/bin/TraitementMdb.sh reload
+
+[Install]
+WantedBy=multi-user.target
